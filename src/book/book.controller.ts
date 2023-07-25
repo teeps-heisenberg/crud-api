@@ -17,7 +17,7 @@ export class BookController{
         return this.bookService.updateBookService(book);
     }
 
-    @Post('/update')
+    @Post('/add')
     addBook(@Body() book:Book) : string {  
         return this.bookService.addBookService(book);
     }
